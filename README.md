@@ -41,12 +41,12 @@ graph LR
     end
 
     subgraph Intelligence ["Agent Container"]
-        Agents[AI Agent Swarm]
+        Agent[Centralized AI Agent]
     end
 
     Vue <-->|REST API / JSON| FastAPI
     FastAPI <-->|SQLAlchemy / CRUD| Postgres
-    FastAPI <-->|State Handoffs| Agents
+    FastAPI <-->|State Handoffs| Agent
 
     style Client fill:#161b22,stroke:#30363d,color:#c9d1d9
     style Server fill:#161b22,stroke:#1f6feb,color:#c9d1d9
@@ -58,7 +58,7 @@ graph LR
 
 ## 🛠️ Agent Architecture & Orchestration
 
-Utilizing a **custom state-machine coordination layer** to manage handoffs between specialized agents, ensuring deterministic transitions and robust error handling.
+Utilizing a **custom state-machine** to manage the logic and transitions of the **Centralized AI Agent**, ensuring deterministic processing and robust error handling.
 
 ```mermaid
 %%{init: { 'theme': 'dark', 'themeVariables': { 'mainBkg': '#0d1117', 'primaryColor': '#1f6feb', 'primaryTextColor': '#c9d1d9', 'primaryBorderColor': '#30363d', 'lineColor': '#8b949e', 'tertiaryColor': '#161b22' } } }%%
@@ -66,22 +66,24 @@ graph TD
     User((User)) -->|Spanish Input| Gateway[API Gateway - FastAPI]
     Gateway -->|Context Retrieval| KG[(Knowledge Graph)]
     
-    subgraph AI Agent Swarm ["Custom State-Machine Coordination Layer"]
-        Validator[Grammar Validator Agent]
-        KG -->|Retrieve Rules| Validator
-        Validator -->|Check Input| Tutor[Conversational Tutor Agent]
-        Tutor -->|Grounded Response| Proposer[Flashcard Proposer Agent]
+    subgraph CentralAgent ["Centralized AI Agent"]
+        direction TB
+        State[State Machine Logic]
+        Validator[Validation Logic]
+        Tutor[Tutor Logic]
+        Proposer[Proposer Logic]
     end
     
-    Proposer -->|New Card Proposal| User
-    Tutor -->|Natural Response| User
+    Gateway -->|Request| CentralAgent
+    KG -->|Retrieve Rules| CentralAgent
+    CentralAgent -->|Response / Flashcards| User
     
     subgraph Persistence & SRS
         SRS[FSRS Scheduler] -->|Calculate Intervals| DB[(PostgreSQL)]
         User -->|Grade Card| SRS
     end
 
-    style AI Agent Swarm fill:#161b22,stroke:#1f6feb,color:#c9d1d9
+    style CentralAgent fill:#161b22,stroke:#1f6feb,color:#c9d1d9
 ```
 
 </div>
