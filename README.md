@@ -1,21 +1,14 @@
 <div align="center">
 
-# Hola, I'm Tom Stehling 👋
-### Software Engineer | AI Agent Architect | Language Tech Enthusiast
+# Hey, I'm Tom Stehling 👋
+### Software Engineer | Tech Enthusiast  | Applied AI Researcher
 
-[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
-[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org)
-[![Vue.js](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D)](https://vuejs.org)
-
-I build systems that bridge the gap between **Generative AI** and **structured pedagogical logic**. My focus is on developing AI Agents grounded by Knowledge Graphs to solve complex problems—starting with language acquisition.
+I'm currently exploring the capabilities and limitations of large language models and agentic systems.
 
 ---
 
 ## 🚀 Featured Project: AnkiXParlaI
-
-**Status:** Implementation (Active Development)  
-**Current Sprint:** Multi-agent state-machine logic & FSRS integration
+**[🌐 Live Demo]((https://ankixparlai-frontend-380281608527.europe-southwest1.run.app/login))**
 
 ### 🧠 The Core: Spanish Grammar Knowledge Graph
 A custom Knowledge Graph serving as the "source of truth" for AI agents, preventing hallucination through Relational Graph Modeling.
