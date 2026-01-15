@@ -1,14 +1,14 @@
 <div align="center">
 
-# Hey, I'm Tom Stehling 👋
+# 👋 Hi, I'm Tom — CS MSc student from Kiel/Germany
 ### Software Engineer | Tech Enthusiast  | Applied AI Researcher
-
-I'm currently exploring the capabilities and limitations of large language models and agentic systems.
+Currently building and exploring agentic systems, MCP servers, and the limits of LLMs 🤖⚡
+Open to collaborations on agentic tools!
 
 ---
 
 ## 🚀 Featured Project: AnkiXParlaI
-**[🌐 Live Demo]((https://ankixparlai-frontend-380281608527.europe-southwest1.run.app/login))**
+**[🌐 Live Demo](https://ankixparlai-frontend-380281608527.europe-southwest1.run.app/login)**
 
 ### 🧠 The Core: Spanish Grammar Knowledge Graph
 A custom Knowledge Graph serving as the "source of truth" for AI agents, preventing hallucination through Relational Graph Modeling.
