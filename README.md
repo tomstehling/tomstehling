@@ -21,6 +21,41 @@ A custom Knowledge Graph serving as the "source of truth" for AI agents, prevent
 
 ---
 
+## 🔄 System Data Flow
+
+A high-level overview of the ecosystem's communication architecture. Note that the **Agent Container** is isolated, communicating exclusively with the **Backend** to ensure secure and structured data handling.
+
+```mermaid
+%%{init: { 'theme': 'dark', 'themeVariables': { 'mainBkg': '#0d1117', 'primaryColor': '#1f6feb', 'primaryTextColor': '#c9d1d9', 'primaryBorderColor': '#30363d', 'lineColor': '#8b949e', 'tertiaryColor': '#161b22' } } }%%
+graph LR
+    subgraph Client ["Frontend"]
+        Vue[Vue 3 Application]
+    end
+
+    subgraph Server ["Backend"]
+        FastAPI[FastAPI Gateway]
+    end
+
+    subgraph Storage ["Database"]
+        Postgres[(PostgreSQL / FSRS)]
+    end
+
+    subgraph Intelligence ["Agent Container"]
+        Agents[AI Agent Swarm]
+    end
+
+    Vue <-->|REST API / JSON| FastAPI
+    FastAPI <-->|SQLAlchemy / CRUD| Postgres
+    FastAPI <-->|State Handoffs| Agents
+
+    style Client fill:#161b22,stroke:#30363d,color:#c9d1d9
+    style Server fill:#161b22,stroke:#1f6feb,color:#c9d1d9
+    style Storage fill:#161b22,stroke:#316192,color:#c9d1d9
+    style Intelligence fill:#161b22,stroke:#238636,color:#c9d1d9
+```
+
+---
+
 ## 🛠️ Agent Architecture & Orchestration
 
 Utilizing a **custom state-machine coordination layer** to manage handoffs between specialized agents, ensuring deterministic transitions and robust error handling.
