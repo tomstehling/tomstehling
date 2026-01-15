@@ -1,82 +1,88 @@
 # Hola, I'm Tom Stehling 👋
 
-### Software Engineer | AI Agent Architect | Language Tech Enthusiast
+```mermaid
+%%{init: {
+  'theme': 'dark',
+  'themeVariables': {
+    'primaryColor': '#1f6feb',
+    'primaryTextColor': '#c9d1d9',
+    'primaryBorderColor': '#30363d',
+    'lineColor': '#8b949e',
+    'secondaryColor': '#161b22',
+    'tertiaryColor': '#0d1117',
+    'mainBkg': '#0d1117'
+  }
+} }%%
 
-I build systems that bridge the gap between **Generative AI** and **structured pedagogical logic**. My current focus is on developing sophisticated AI Agents grounded by Knowledge Graphs to solve complex, domain-specific problems—starting with language acquisition.
+graph TD
+    %% Main Profile Card
+    subgraph Profile ["Tom Stehling | AI Agent Architect"]
+        direction TB
+        Bio["Software Engineer focused on bridging GenAI & Pedagogical Logic.<br/>Architecting systems grounded by Knowledge Graphs."]
+    end
 
----
+    %% Project Status & Tech
+    subgraph Project ["🚀 Featured Project: AnkiXParlaI"]
+        direction TB
+        Status["<b>Status:</b> Active Development (Implementation Phase)<br/><b>Sprint:</b> Multi-agent state-machine & FSRS integration"]
+        Stack["<b>Stack:</b> FastAPI, Vue 3, PostgreSQL, Gemini API"]
+    end
 
-## 🚀 Featured Project: AnkiXParlaI
+    %% Knowledge Graph Details
+    subgraph Core ["🧠 The Core: Spanish Grammar Knowledge Graph"]
+        direction TB
+        KG["Relational Graph Modeling (Adjacency Lists in PostgreSQL)<br/>Optimized via SQLAlchemy & Recursive Querying"]
+    end
 
-AnkiXParlaI is a fullstack ecosystem designed to transition language learners from passive recognition to active fluency using **grounded AI agents**.
+    %% Architecture Flow
+    subgraph Architecture ["🛠️ Agentic Orchestration"]
+        direction TB
+        Flow["Custom State-Machine Coordination Layer<br/>Deterministic Handoffs | Robust Error Handling"]
+    end
 
-> **Current Status:** Architectural Design (100%) | Implementation (Active Development)
-> *Current sprint: Implementing multi-agent state-machine logic and refining FSRS integration.*
+    %% RAG Walkthrough
+    subgraph RAG ["🔍 Agentic RAG Walkthrough"]
+        direction TB
+        Step1["1. Retrieval: Identify Verb Lemmas via Input"]
+        Step2["2. Grounding: Fetch 'Learning Hacks' from Knowledge Graph"]
+        Step3["3. Validation: Validator Agent checks input against retrieved rules"]
+        Step4["4. Feedback: Tutor Agent synthesizes grounded response"]
+    end
 
-### 🧠 The Core: Spanish Grammar Knowledge Graph
-To move beyond the "hallucination" risks of standard LLMs, I built a custom **Knowledge Graph** of Spanish grammar. This graph serves as the "source of truth" for my AI agents.
+    Bio --> Project
+    Project --> Core
+    Core --> Architecture
+    Architecture --> RAG
 
-*   **Implementation:** Relational Graph Modeling via adjacency lists in **PostgreSQL**, optimized for traversal using **SQLAlchemy** and recursive querying.
-*   **Entity Mapping:** Hierarchical relationships between Verb Lemmas, Grammatical Tags (CEFR-leveled), and "Learning Hacks" (Rules & Mnemonics).
+    %% Styling
+    style Profile fill:#161b22,stroke:#30363d,color:#58a6ff,stroke-width:2px
+    style Project fill:#0d1117,stroke:#1f6feb,color:#c9d1d9
+    style Core fill:#0d1117,stroke:#1f6feb,color:#c9d1d9
+    style Architecture fill:#0d1117,stroke:#1f6feb,color:#c9d1d9
+    style RAG fill:#0d1117,stroke:#238636,color:#c9d1d9
+    
+    classDef default font-family:Arial,font-size:14px;
+```
 
-#### The "Money Shot" - A Glimpse into the Graph:
+### 🧠 Grounding Graph Visualization
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./grounding_graph.png">
   <source media="(prefers-color-scheme: light)" srcset="./grounding_graph.png">
-  <img alt="Spanish Grammar Knowledge Graph" src="./grounding_graph.png">
+  <img alt="Spanish Grammar Knowledge Graph" src="./grounding_graph.png" width="100%">
 </picture>
-
----
-
-## 🛠️ Agent Architecture & Data Flow
-
-I specialize in designing **Agentic Workflows** where multiple specialized LLM instances collaborate, grounded by structured data.
-
-### Multi-Agent Orchestration Flow
-The system utilizes a **custom state-machine coordination layer** to manage handoffs between specialized agents, ensuring deterministic transitions and robust error handling.
-
-```mermaid
-%%{init: {'theme': 'dark', 'themeVariables': { 'primaryColor': '#1f6feb', 'edgeLabelBackground':'#161b22', 'tertiaryColor': '#161b22'}}}%%
-graph TD
-    User((User)) -->|Spanish Input| Gateway[API Gateway - FastAPI]
-    Gateway -->|Context Retrieval| KG[(Knowledge Graph)]
-    
-    subgraph AI Agent Swarm
-        Validator[Grammar Validator Agent]
-        KG -->|Retrieve Rules| Validator
-        Validator -->|Check Input| Tutor[Conversational Tutor Agent]
-        Tutor -->|Grounded Response| Proposer[Flashcard Proposer Agent]
-    end
-    
-    Proposer -->|New Card Proposal| User
-    Tutor -->|Natural Response| User
-    
-    subgraph Persistence & SRS
-        SRS[FSRS Scheduler] -->|Calculate Intervals| DB[(PostgreSQL)]
-        User -->|Grade Card| SRS
-    end
-```
-
-### Agentic RAG in Action: A Walkthrough
-1.  **Retrieval:** When a user submits Spanish text, the system identifies verb lemmas and grammatical structures.
-2.  **Grounding:** The **Validator Agent** calls a specialized tool to fetch "Learning Hacks" (rules) and "Grammar Tags" associated with those lemmas from the Knowledge Graph.
-3.  **Validation:** Instead of relying on LLM internal knowledge, the Agent compares the user's input against the *retrieved pedagogical rules* to identify specific errors.
-4.  **Feedback:** The **Tutor Agent** synthesizes a natural response based on the validation report, while the **Proposer Agent** generates targeted flashcards to bridge identified gaps.
 
 ---
 
 ## 🧰 Technical Toolbox
 
-*   **Languages:** Python (FastAPI, SQLAlchemy), TypeScript (Vue 3, Node.js), Go
-*   **AI/LLM:** Gemini API, OpenAI/OpenRouter, Agentic Workflows, Prompt Engineering
-*   **Data:** PostgreSQL (Supabase), Redis, Knowledge Graph Design (Relational/JSONB)
-*   **DevOps:** Docker, Google Cloud Platform (Cloud Run, Cloud Build), Git/CI-CD
+*   **Languages:** Python (FastAPI, SQLAlchemy), TypeScript (Vue 3), Go
+*   **AI/LLM:** Gemini API, OpenAI, Agentic Workflows, Prompt Engineering
+*   **Data:** PostgreSQL (Relational/JSONB), Knowledge Graph Design
+*   **DevOps:** Docker, GCP (Cloud Run, Cloud Build), CI-CD
 
 ---
 
 ## 📫 Let's Connect!
-
-I am actively looking for opportunities where I can apply my experience in **AI Orchestration** and **Fullstack Engineering**.
 
 *   **GitHub:** [ankixparlaibackend](https://github.com/tomstehling/ankixparlaibackend) | [ankixparlaifrontend](https://github.com/tomstehling/ankixparlaifrontend)
 *   **Project Site:** [ankixparlai.com](https://ankixparlai.com) (In Development)
