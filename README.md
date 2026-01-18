@@ -8,9 +8,11 @@ Open to collaborations on MCP or agentic tools!
 ---
 
 ## 🚀 Current Project: AnkiXParlaI
+# 🚨 CLICK TO TRY ➡️ [![AnkixParlAI Banner](https://img.shields.io/badge/🚀_ANKIXPARLAI.COM-f97316?style=for-the-badge&logo=appveyor&logoColor=white)](https://ankixparlai-frontend-380281608527.europe-southwest1.run.app/login)
+
 Want an ultra personalized language teacher? Try out my prototype! (english-spanish)
-**[🌐 AnkixParlAI.com](https://ankixparlai-frontend-380281608527.europe-southwest1.run.app/login)**
-[![AnkixParlAI Banner](https://img.shields.io/badge/--🚀_TRY_THE_PROTOTYPE_NOW-f97316?style=for-the-badge&logo=appveyor&logoColor=white)](https://ankixparlai-frontend-380281608527.europe-southwest1.run.app/login)
+
+
 
 ### 🧠 The Architecture
 
