@@ -13,6 +13,17 @@ Want an ultra personalized language teacher? Try out my prototype! (english-span
 
 
 ### 🧠 The Architecture
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./architecture.png">
+  <source media="(prefers-color-scheme: light)" srcset="./architecture.png">
+  <img alt="Agent Architecture" src="./architecture.png" width="90%">
+</picture>
+
+The duality of an adaptive learning system: The system continuously asseses the students knowledge to build an accurate model, that is then used to provide an optimal next learning step. 
+
+
+
 A custom Knowledge Graph serving as the "source of truth" for AI agents, preventing hallucination through Relational Graph Modeling.
 
 <picture>
@@ -60,13 +71,6 @@ graph LR
 
 ## 🛠️ Agent Architecture & Orchestration
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./architecture.png">
-  <source media="(prefers-color-scheme: light)" srcset="./architecture.png">
-  <img alt="Agent Architecture" src="./architecture.png" width="90%">
-</picture>
-
-Utilizing a **custom state-machine** to manage the logic and transitions of the **Centralized AI Agent**, ensuring deterministic processing and robust error handling.
 
 ```mermaid
 %%{init: { 'theme': 'dark', 'themeVariables': { 'mainBkg': '#0d1117', 'primaryColor': '#1f6feb', 'primaryTextColor': '#c9d1d9', 'primaryBorderColor': '#30363d', 'lineColor': '#8b949e', 'tertiaryColor': '#161b22' } } }%%
