@@ -22,10 +22,9 @@ Want an ultra personalized language teacher? Try out my prototype! (english-span
 
 The duality of an adaptive learning system: The system continuously asseses the students knowledge to build an accurate model, that is then used to provide an optimal next learning step. 
 
+## 🧭 Dynamic Curriculum
 
-
-A custom Knowledge Graph serving as the "source of truth" for AI agents, preventing hallucination through Relational Graph Modeling.
-
+A custom Knowledge Graph serving as the "source of truth" for the agent, prevents hallucination through Relational Graph Modeling. Also, established principles of language pedagogy are baked into the graph to ensure optimal learning delivery.
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./grounding_graph.png">
   <source media="(prefers-color-scheme: light)" srcset="./grounding_graph.png">
