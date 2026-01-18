@@ -58,6 +58,12 @@ graph LR
 
 ## 🛠️ Agent Architecture & Orchestration
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./architecture.png">
+  <source media="(prefers-color-scheme: light)" srcset="./architecture.png">
+  <img alt="Agent Architecture" src="./architecture.png" width="90%">
+</picture>
+
 Utilizing a **custom state-machine** to manage the logic and transitions of the **Centralized AI Agent**, ensuring deterministic processing and robust error handling.
 
 ```mermaid
