@@ -1,16 +1,18 @@
 <div align="center">
 
 # 👋 Hi, I'm Tom — CS MSc student from Kiel/Germany
-### Software Engineer | Tech Enthusiast  | Applied AI Researcher
-Currently building and exploring agentic systems, MCP servers, and the limits of LLMs 🤖⚡
-Open to collaborations on agentic tools!
+### Software Engineer | Tech Enthusiast  | Rising Applied AI Expert
+Currently maxing out LLMs and exploring agentic systems.  🤖⚡
+Open to collaborations on MCP or agentic tools!
 
 ---
 
-## 🚀 Featured Project: AnkiXParlaI
+## 🚀 Current Project: AnkiXParlaI
+Want an ultra personalized language teacher? Try out my prototype! (english-spanish)
 **[🌐 Live Demo](https://ankixparlai-frontend-380281608527.europe-southwest1.run.app/login)**
 
-### 🧠 The Core: Spanish Grammar Knowledge Graph
+
+### 🧠 The Architecture
 A custom Knowledge Graph serving as the "source of truth" for AI agents, preventing hallucination through Relational Graph Modeling.
 
 <picture>
