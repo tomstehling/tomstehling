@@ -9,7 +9,7 @@ Open to collaborations on MCP or agentic tools!
 
 ## 🚀 Current Project: AnkiXParlaI
 Want an ultra personalized language teacher? Try out my prototype! (english-spanish)
-**[🌐 Live Demo](https://ankixparlai-frontend-380281608527.europe-southwest1.run.app/login)**
+**[🌐 AnkixParlAI.com](https://ankixparlai-frontend-380281608527.europe-southwest1.run.app/login)**
 
 
 ### 🧠 The Architecture
