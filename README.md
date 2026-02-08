@@ -68,36 +68,6 @@ graph LR
     style Intelligence fill:#161b22,stroke:#238636,color:#c9d1d9
 ```
 
----
-
-## 🛠️ Agent Architecture & Orchestration
-
-
-```mermaid
-%%{init: { 'theme': 'dark', 'themeVariables': { 'mainBkg': '#0d1117', 'primaryColor': '#1f6feb', 'primaryTextColor': '#c9d1d9', 'primaryBorderColor': '#30363d', 'lineColor': '#8b949e', 'tertiaryColor': '#161b22' } } }%%
-graph TD
-    User((User)) -->|Spanish Input| Gateway[API Gateway - FastAPI]
-    Gateway -->|Context Retrieval| KG[(Knowledge Graph)]
-    
-    subgraph CentralAgent ["Centralized AI Agent"]
-        direction TB
-        State[State Machine Logic]
-        Validator[Validation Logic]
-        Tutor[Tutor Logic]
-        Proposer[Proposer Logic]
-    end
-    
-    Gateway -->|Request| CentralAgent
-    KG -->|Retrieve Rules| CentralAgent
-    CentralAgent -->|Response / Flashcards| User
-    
-    subgraph Persistence & SRS
-        SRS[FSRS Scheduler] -->|Calculate Intervals| DB[(PostgreSQL)]
-        User -->|Grade Card| SRS
-    end
-
-    style CentralAgent fill:#161b22,stroke:#1f6feb,color:#c9d1d9
-```
 
 </div>
 
