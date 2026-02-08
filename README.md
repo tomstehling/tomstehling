@@ -8,7 +8,7 @@ Open to collaborations on MCP or agentic tools!
 ---
 
 ## 🚀 Current Project: AnkiXParlaI
-# 🚨 CLICK TO TRY ➡️ [![AnkixParlAI Banner](https://img.shields.io/badge/🚀_ANKIXPARLAI.COM-f97316?style=for-the-badge&logo=appveyor&logoColor=white)](https://ankixparlai-frontend-380281608527.europe-southwest1.run.app/login)
+# 🚨 TRY HERE ➡️ [![AnkixParlAI Banner](https://img.shields.io/badge/🚀_ANKIXPARLAI.COM-f97316?style=for-the-badge&logo=appveyor&logoColor=white)](https://ankixparlai-frontend-380281608527.europe-southwest1.run.app/login)
 
 Want an ultra personalized language teacher? Try out my prototype! (english-spanish)
 
@@ -26,7 +26,7 @@ The duality of an adaptive learning system: The system continuously asseses the 
 
 ## 🧭 Relational Graph Modeling
 
-To get a ultra personalized learning experience, the system must use a dynamic curriculum. To ensure factual accuracy a Knowledge Graph is used to provide the "source of truth" for the agent. This prevents hallucinations and supports long term goal cohearence. Established principles of language pedagogy are baked into the graph, leveraging the knowledge of decades of language learning.
+To get a ultra personalized learning experience, the system uses a dynamic curriculum. To ensure factual accuracy the agent uses a Knowledge Graph to retreive information from the "source of truth". This prevents hallucinations and supports long term goal cohearence. The graph is based on current language pedagogy principles thus leveraging the knowledge of decades of language learning.
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./grounding_graph.png">
   <source media="(prefers-color-scheme: light)" srcset="./grounding_graph.png">
