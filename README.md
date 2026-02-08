@@ -1,8 +1,8 @@
 <div align="center">
 
 # 👋 Hi, I'm Tom — CS MSc student from Kiel/Germany
-### Software Engineer | Tech Enthusiast  | Rising Applied AI Expert
-Currently maxing out LLMs and exploring agentic systems.  🤖⚡
+### Software Engineer | Tech Enthusiast  | Applied AI 
+Currently exploring agentic systems  🤖⚡
 Open to collaborations on MCP or agentic tools!
 
 ---
@@ -26,7 +26,7 @@ The duality of an adaptive learning system: The system continuously asseses the 
 
 ## 🧭 Relational Graph Modeling
 
-To get a ultra personalized learning experience, the system uses a dynamic curriculum. To ensure factual accuracy the agent uses a Knowledge Graph to retreive information from the "source of truth". This prevents hallucinations and supports long term goal cohearence. The graph is based on current language pedagogy principles thus leveraging the knowledge of decades of language learning.
+To get a ultra personalized learning experience, the system uses a dynamic curriculum. To ensure factual accuracy the agent uses a Knowledge Graph to base its decitions and actions on correct data. This prevents hallucinations and supports long term goal cohearence. The graph is based on current language pedagogy principles thus leveraging the knowledge of decades of language learning.
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./grounding_graph.png">
   <source media="(prefers-color-scheme: light)" srcset="./grounding_graph.png">
@@ -71,27 +71,18 @@ graph LR
 
 </div>
 
-### 🔍 Agentic RAG: How it works
-*   **Retrieval:** identifies verb lemmas and grammatical structures from user input.
-*   **Grounding:** The **Validator Agent** fetches "Learning Hacks" and rules from the PostgreSQL Knowledge Graph.
-*   **Validation:** The agent compares the user's input against these rules to identify specific pedagogical errors.
-*   **Feedback:** The **Tutor Agent** synthesizes a grounded response while the **Proposer Agent** generates targeted flashcards.
 
----
 
 ### 🧰 Technical Toolbox
-*   **Languages:** Python (FastAPI, SQLAlchemy), TypeScript (Vue 3, Node.js), Go
-*   **AI/LLM:** Gemini API, OpenAI, Agentic Workflows, Prompt Engineering
-*   **Data:** PostgreSQL (Relational/JSONB), Knowledge Graph Design
+*   **Languages:** Python (FastAPI, SQLAlchemy), TypeScript (Vue)
+*   **AI/LLM:** OpenRouter integration, Context Engineering, Agent Loops
+*   **Data:** PostgreSQL (Relational/JSONB), NetworkX
 *   **DevOps:** Docker, GCP (Cloud Run, Cloud Build), Git/CI-CD
 
 ---
 
 ### 📫 Let's Connect!
 *   **GitHub:** [ankixparlaibackend](https://github.com/tomstehling/ankixparlaibackend) | [ankixparlaifrontend](https://github.com/tomstehling/ankixparlaifrontend)
-*   **Project Site:** [ankixparlai.com](https://ankixparlai.com) (In Development)
+*   **Project Site:** [![AnkixParlAI Banner](https://img.shields.io/badge/🚀_ANKIXPARLAI.COM-f97316?style=for-the-badge&logo=appveyor&logoColor=white)](https://ankixparlai-frontend-380281608527.europe-southwest1.run.app/login) (In Development)
 
-<div align="center">
-  <br/>
-  <i>Created with the help of my personalized AI engineering agent.</i>
-</div>
+
